@@ -10,7 +10,6 @@ h1 {
 
 p {
     font-family: "Open Sans", sans-serif;
-    text-align: justify;
     font-size: 20px;
     padding-left: 20px;
     padding-right: 20px;
@@ -31,9 +30,53 @@ q {
 footer {
     background-color: white;
     padding: 2%;
-    
+    text-align: center;
+}
+footer p {
+    font-size: .9em;
+    text-align: center;
 }
 
+/* Social media */
+.fa {
+    padding: 1em;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.git-footer {
+    height: 47px;
+    margin-top: .4em;
+}
+
+.git-footer:hover {
+    opacity: .7;
+    transform: scale(1);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container > div {
+    margin: 0 6px;
+}
 
 /* Image Styling */
 img {
@@ -61,11 +104,13 @@ a img:hover {
 /* Navbar */
 .navbar {
     overflow: hidden;
-    margin-left: 50px;
+    margin-left: 2vw;
+    margin-top: 2vh;
+    float: left;
 }
 
 .navbar a {
-    float: right;
+    display: inline-block;
     font-family: "poppins", sans-serif;
     color: #f2f2f2;
     text-align: center;
@@ -113,7 +158,7 @@ a img:hover {
 .column_1 {
     float: left;
     width: 50%;
-    padding-top: 3%;
+    padding: 3% 2% 0% 2%;
     height: 400px;
     background-color: #f2f2f2;
 }
@@ -136,6 +181,10 @@ a img:hover {
 .column_tall {
     padding-top: 3.5%;
     height: 450px;
+}
+
+.align_right {
+    text-align: right;
 }
 
 .row:after {
@@ -187,4 +236,10 @@ form {
     background-color: #f2f2f2;
     padding: 10px;
     font-family: "Open Sans", sans-serif;
+}
+
+.column_tall h1,
+.column_tall-r {
+    margin-top: 0px;
+    padding-top: 0;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/portfolio-website.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
@@ -21,7 +22,7 @@
             </div>
         </div>
         <div class="intro-text center">
-            <h1 class="white-text">Lyman McBride is a software developer based out of Provo, Utah. </h1>
+            <h1 class="white-text">Lyman McBride <br> is a software developer in Provo, Utah. </h1>
         </div>
     </div>
 
@@ -36,19 +37,18 @@
         <div class="column_1">
             <h1>About me</h1>
             <p>Trained as a musician, Lyman McBride loves the process of creation and working on teams to solve difficult problems.
-                <br>He is a graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy</a>'s Software Developer Bootcamp, and is trained in the following languages: C#, Javascript, SQL, HTML and more! 
-                <br>A father of two Lyman loves spending time with family, playing music, and trail running.
-            </p>
+                As a graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy</a>'s Software Developer Bootcamp, he is trained in the following languages: C#, Javascript, SQL, HTML and more! </p>
+            <p>Lyman loves spending time with his wife and two beautiful kids, playing music, and trail running.</p>
         </div>
     </div>
 
     <!--Portfolio-->
     <div class="row" id="portfolio">
         <div class="column_1">
-            <h1>Portfolio</h1>
-            <p>You can view my coding projects on my GitHub profile <a href="https://github.com/lymanmcbride">here:</a>
+            <h1 class="align_right">Portfolio</h1>
+            <p class="align_right">You can view my coding projects on my GitHub profile <a href="https://github.com/lymanmcbride" target="_blank">here:</a>
             <br>
-            <p class="center"><a href="https://github.com/lymanmcbride" target="_blank">https://github.com/lymanmcbride</a></p></p>
+            <p class="align_right"><a href="https://github.com/lymanmcbride" target="_blank">https://github.com/lymanmcbride</a></p></p>
         </div>
         <div class="column_2">
             <a href="https://github.com/lymanmcbride" target="_blank"><img src="./imgs/tech/github.jpg" alt="Folders and the Github Logo"></a>
@@ -61,15 +61,15 @@
             <img src="./imgs/tech/contact.jpg" alt="A man holding a blank calling card">
         </div>
         <!--Contact Form-->
-        <div class="column_1 column_tall">
+        <div class="column_1 column_tall column_tall-r">
             <h1>Contact</h1>
             <form action="https://formspree.io/f/xjvpakdw" method="POST">
                 <label for="name">Name:</label>
                     <input type="text" name="name" id="name" placeholder="Last Name, First Name"><br>
                 <label for="email">Email:</label>
                     <input type="text" id="email" name="email"><br>
-                <p>Message:</p>
-                    <textarea id="message" name="message" rows="8" cols="30" placeholder="Hello, Lyman..."></textarea><br>
+                <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="3" cols="30" placeholder="Hello, Lyman..."></textarea><br>
                 <input type="submit" value="Submit">
             </form>
         </div>
@@ -77,14 +77,15 @@
 
     <!--Footer-->
     <footer>
-        <p>I'm also a musician, please check out my musician site!</p>
-        <p class="social-media">
-            <ul>
-                <li><a href="https://www.facebook.com/lyman.mcbride">Facebook</a></li>
-                <li><a href="www.linkedin.com/in/lyman-mcbride">Linkedin</a></li>
-                <li><a href="https://github.com/lymanmcbride">Github</a></li>
-            </ul>
-        </p>
+        <!-- <p>I'm also a musician, please check out my musician site!</p>
+        <a href="https://www.linkedin.com/in/lyman-mcbride" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://github.com/lymanmcbride" target="_blank"><img class="git-footer" src="./imgs/tech/GitHub-Mark-64px.png" alt="github logo"></a>
+        <a href="https://www.facebook.com/lyman.mcbride" target="_blank" class="fa fa-facebook"></a> -->
+        <div class="flex-container">
+            <div><a href="https://www.linkedin.com/in/lyman-mcbride" target="_blank" class="fa fa-linkedin"></a></div>
+            <div><a href="https://github.com/lymanmcbride" target="_blank"><img class="git-footer" src="./imgs/tech/GitHub-Mark-64px.png" alt="github logo"></a></div>
+            <div><a href="https://www.facebook.com/lyman.mcbride" target="_blank" class="fa fa-facebook"></a></div>
+        </div>
     </footer>
 
 </body>
