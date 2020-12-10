@@ -85,6 +85,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
 }
 
 a img:hover {
@@ -140,11 +141,13 @@ a img:hover {
 
 .intro-text {
     text-shadow: -1px 2px black;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 15%;
     transform: translate(-50%, -50%);
     position: absolute;
-    font-size: larger;
+    font-size: x-large;
+    line-height: 4.5em;
+    
 }
 .white-text {
     color: white;
@@ -175,7 +178,7 @@ a img:hover {
     width: 50%;
     padding-top: 1.9%;
     height: 400px;
-    background-color: #4d4d4d;
+    /* background-color: #4d4d4d; */
 }
 
 .column_tall {
