@@ -98,6 +98,10 @@ a img:hover {
         height: 100px;
         margin-top: 150px;
     }
+
+    .contact_responsive {
+        display: none;
+    }
 }
 
 
@@ -141,9 +145,8 @@ a img:hover {
 
 .intro-text {
     text-shadow: -1px 2px black;
-    top: 40%;
-    left: 15%;
-    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 5%;
     position: absolute;
     font-size: x-large;
     line-height: 4.5em;
@@ -188,6 +191,12 @@ a img:hover {
 
 .align_right {
     text-align: right;
+}
+
+@media screen and (max-width: 576px) {
+    .align_right {
+        text-align: left;
+    }
 }
 
 .row:after {
