@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0%;
 }
 
 h1 {
+    font-size: 3vw;
     font-family: "poppins", sans-serif;
     margin-top: 3%;
     color: #1a1a1a;
@@ -93,10 +98,20 @@ a img:hover {
     transform: scale(1.1);
 }
 
+@media screen and (max-width: 1025px) {
+    h1 {
+        font-size: 5vw;
+    }
+}
+
 @media screen and (max-width: 576px) {
     img {
         height: 100px;
         margin-top: 150px;
+    }
+
+    h1 {
+        font-size: 9vw;
     }
 
     .contact_responsive {
@@ -126,6 +141,14 @@ a img:hover {
 
 .navbar a:hover {
     color: black;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #38383a;
+    z-index: 9;
 }
 
 .bg-img {
