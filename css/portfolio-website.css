@@ -8,7 +8,7 @@ body {
 
 h1 {
     font-family: "poppins", sans-serif;
-    margin-top: 3%;
+    margin-top: 1%;
     color: #1a1a1a;
 }
 
@@ -165,17 +165,12 @@ a img:hover {
 .column_1 {
     float: left;
     width: 50%;
-    padding: 3% 2% 0% 2%;
+    padding: 2% 2% 2% 2%;
     height: 400px;
-    background-color: #f2f2f2;
+    background-color: #f1f1ff;
 }
 
-@media screen and (max-width: 576px) {
-    .column_1 {
-        width: 100%;
-        height: auto;
-    }
-}
+
 
 .column_2 {
     float: left;
@@ -192,12 +187,6 @@ a img:hover {
 
 .align_right {
     text-align: right;
-}
-
-@media screen and (max-width: 576px) {
-    .align_right {
-        text-align: left;
-    }
 }
 
 .row:after {
@@ -271,23 +260,70 @@ form {
     padding-top: 0;
 }
 
+.responsive_portfolio h1 {
+    margin-top: 80px;
+}
+
 
 /* =================================
     MEDIA QUERIES
 ================================= */
-@media screen and (max-width: 600px) {
-    img {
-        height: 200px;
-        margin-top: 150px;
+
+@media screen and (max-width: 830px) {
+    .column_1, .column_2 {
+        height: auto;
+        min-height: 345px;
     }
 
+    .contact {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 700px) {
+    p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 576px) {
+    img {
+        height: 200px;
+        margin: 4% auto 4% auto;
+    }
+    .column_1, .column_2 {
+        width: 100%;
+        height: auto;
+        padding: 2%;
+        min-height: auto;
+    }
     h1 {
         font-size: 9vw;
+    }
+
+    p {
+        font-size: 5.5vw;
+    }
+
+    .align_right {
+        text-align: left;
+    }
+
+    .contact {
+        background-color: white;
     }
 
     .contact, .contact-box, form, input[type=submit] {
         width: 100%;
         margin-top: 0;
         display: table;
+        
+    }
+
+    .responsive_portfolio, .responsive_portfolio h1 {
+        background-color: white;
+        margin-top: 0;
+    }
+    .responsive_github {
+        background-color: #f2f2f2;
     }
 }
+
