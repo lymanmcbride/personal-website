@@ -167,7 +167,7 @@ a img:hover {
     width: 50%;
     padding: 2% 2% 2% 2%;
     height: 400px;
-    background-color: #f1f1ff;
+    background-color: #e0f4ff;
 }
 
 
@@ -202,7 +202,7 @@ a img:hover {
 }
 
 .contact {
-    background-color: #f1f1ff;
+    background-color: #e0f4ff;
     width: 45%;
     display: block;
     margin: 0px auto;
@@ -323,7 +323,7 @@ form {
         margin-top: 0;
     }
     .responsive_github {
-        background-color: #f2f2f2;
+        background-color: #e0f4ff;
     }
 }
 
